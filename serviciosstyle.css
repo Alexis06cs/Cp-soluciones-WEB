@@ -1,0 +1,290 @@
+main {
+    margin: 0 25px; /* Puedes ajustar el valor del margen según tu preferencia */
+}
+
+/* Para pantallas más grandes, puedes usar una media query para aumentar el margen */
+@media (min-width: 768px) {
+    main {
+        margin: 0 50px;
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2f0a94;
+    font-weight: bolder;
+    transition: color 0.3s, border-bottom 0.3s;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    color: #6200ea;
+    border-bottom: 2px solid #6200ea;
+}
+
+/* Agregar márgenes laterales al main */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+#titulo-servicio {
+    text-align: left;
+    color: #2f0a94;
+    font-size: 35px;
+}
+
+.mission, .vision {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 45%;
+    text-align: center;
+}
+
+.mission img {
+    max-width: 200px;
+    margin-bottom: 5px;
+}
+.vision img {
+    max-width: 200px;
+    margin-top: 15px;
+}
+.mission h2 {
+    font-size: 30px;
+    color: #333;
+}
+
+.vision h2 {
+    font-size: 30px;
+    color: #333;
+    margin-top: 50px;
+}
+
+.mission p, .vision p {
+    font-size: 24px;
+    color: #555;
+    margin-bottom: 35px;
+}
+.mission p {
+    margin-bottom: 40px;
+}
+
+.mission a {
+    color: #fff;
+    text-decoration: none;
+    background-color: hsl(253, 78%, 55%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.mission a .more-info:hover {
+    background-color: #3ac218;
+    color: #fff;
+}
+
+.vision a {
+    color: #fff;
+    text-decoration: none;
+    background-color:hsl(253, 78%, 55%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 105px;
+    font-size: 24px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 240px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #A52A2A;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.footer-section .more-info {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #A52A2A;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-section .more-info:hover {
+    background-color: #700505;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #A52A2A;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom nav {
+    margin-bottom: 10px;
+}
+
+.footer-bottom nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom nav a:hover {
+    color: #A52A2A;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+}
+
+footer .contact-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .contact-section a:hover {
+    color: #A52A2A;
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+
+    .hero-content p, .service-content p, .contact-content p {
+        font-size: 12px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-section {
+        padding: 10px;
+    }
+
+    .logos, .logos2 {
+        gap: 10px;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

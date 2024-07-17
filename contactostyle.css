@@ -1,0 +1,284 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2f0a94;
+    font-weight: bolder;
+    transition: color 0.3s, border-bottom 0.3s;
+    font-size: 22px;
+}
+
+nav ul li a:hover {
+    color: #6200ea;
+    border-bottom: 2px solid #6200ea;
+}
+
+main {
+    padding: 60px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 40%;
+}
+
+.contact-info h1 {
+    color: #5e1f8a;
+    font-size: 35px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-methods {
+    margin-bottom: 20px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.contact-method i {
+    font-size: 40px;
+    color: #191382;
+}
+
+.contact-method p {
+    margin: 0;
+}
+
+.contact-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-image img {
+    max-width: 70%;
+    height: auto;
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #5e1f8a;
+    font-size: 35px;
+
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #5e1f8a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #4b1570;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #A52A2A;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.footer-section .more-info {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px solid #A52A2A;
+    background-color: #A52A2A;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-section .more-info:hover {
+    background-color: #700505;
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: left;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #A52A2A;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom nav {
+    margin-bottom: 10px;
+}
+
+.footer-bottom nav a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-bottom nav a:hover {
+    color: #A52A2A;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #bbb;
+}
+
+footer .contact-section a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer .contact-section a:hover {
+    color: #A52A2A;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info, .contact-form {
+        max-width: 100%;
+    }
+}
+
