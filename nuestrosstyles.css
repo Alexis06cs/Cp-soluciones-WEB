@@ -359,23 +359,44 @@ footer a:hover {
     .clientes-logos {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Aumenta el tamaño mínimo de las columnas */
     }
+    .testimonials-container {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+    }
+
     .testimonials-row {
-        display: none;
-    }
-
-    .swiper-container {
-        display: block;
-    }
-
-    .swiper-slide {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
     }
 
     .testimonial {
-        flex: 1 0 auto;
-        max-width: 90%;
-        margin: 0 auto;
+        width: 100%;
+        max-width: 100%; /* Asegura que ocupe todo el ancho disponible */
+        padding: 20px;
+        box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin: 0; /* Remueve cualquier margen */
+    }
+
+    .testimonial img {
+        width: 100%; /* Cambiar ancho al 100% del contenedor */
+        max-width: 300px; /* Ajusta el tamaño máximo según tus necesidades */
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .testimonial p {
+        font-size: 2rem;
+        line-height: 1.5;
+        color: #333;
     }
     /*footer*/
 
@@ -465,13 +486,7 @@ footer a:hover {
         left: 15px;
         font-size: 40px;
     }
-    .swiper-slide {
-        width: 150px; /* Ajusta según sea necesario para pantallas pequeñas */
-    }
-
-    .swiper-slide img {
-        max-height: 100px; /* Ajusta la altura máxima en pantallas pequeñas */
-    }
+    
 
     .hero-content {
         flex-direction: column;
